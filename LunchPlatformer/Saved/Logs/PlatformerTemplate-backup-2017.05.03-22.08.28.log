@@ -1,0 +1,1796 @@
+﻿Log file open, 05/03/17 20:22:48
+LogInit:Display: Running engine for game: PlatformerTemplate
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(820711963) SRandInit(820711963).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.085148
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3348071
+LogInit: Engine Version: 4.15.1-3348071+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Mar 15 2017 16:52:47
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.03-18.22.49:510][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.03-18.22.49:510][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.03-18.22.49:525][  0]LogInit: Computer: DESKTOP-K7JL0B7
+[2017.05.03-18.22.49:525][  0]LogInit: User: pslin
+[2017.05.03-18.22.49:525][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.03-18.22.49:525][  0]LogInit: High frequency timer resolution =3.320341 MHz
+[2017.05.03-18.22.49:526][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.05.03-18.22.49:526][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.03-18.22.49:526][  0]LogMemory: Process Physical Memory: 263.82 MB used, 263.82 MB peak
+[2017.05.03-18.22.49:526][  0]LogMemory: Process Virtual Memory: 262.52 MB used, 262.52 MB peak
+[2017.05.03-18.22.49:526][  0]LogMemory: Physical Memory: 5618.56 MB used,  10723.09 MB free, 16341.65 MB total
+[2017.05.03-18.22.49:526][  0]LogMemory: Virtual Memory: 644.25 MB used,  10723.09 MB free, 134217728.00 MB total
+[2017.05.03-18.22.49:620][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2017.05.03-18.22.50:256][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.03-18.22.50:789][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2017.05.03-18.22.50:789][  0]LogD3D11RHI:       6084/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2017.05.03-18.22.50:790][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.03-18.22.50:790][  0]LogD3D11RHI:       0/0/8170 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.03-18.22.50:790][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.03-18.22.50:794][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.03-18.22.50:794][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.03-18.22.50:794][  0]LogWindows: EnumDisplayDevices:
+[2017.05.03-18.22.50:795][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2017.05.03-18.22.50:795][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.05.03-18.22.50:795][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.05.03-18.22.50:795][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2017.05.03-18.22.50:795][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.05.03-18.22.50:795][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2017.05.03-18.22.50:795][  0]LogD3D11RHI:   Driver Version: 381.65 (internal:22.21.13.8165, unified:381.65)
+[2017.05.03-18.22.50:795][  0]LogD3D11RHI:      Driver Date: 3-31-2017
+[2017.05.03-18.22.50:795][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.03-18.22.51:290][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.03-18.22.51:329][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.05.03-18.22.51:377][  0]LogShaderCompilers: Guid format shader working directory is 14 characters bigger than the processId version (D:/UE4 Projects/LunchPlatformer/Intermediate/Shaders/WorkingDirectory/13576/).
+[2017.05.03-18.22.51:377][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/pslin/AppData/Local/Temp/UnrealShaderWorkingDir/124623094D0D7BA979E8D491DD93B404/'.
+[2017.05.03-18.22.51:377][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.03-18.22.52:484][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.03-18.22.52:549][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.03-18.22.52:615][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.03-18.22.52:681][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.03-18.22.52:746][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.03-18.22.52:812][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.03-18.22.52:877][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.03-18.22.52:943][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.03-18.22.52:997][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.03-18.22.53:064][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.03-18.22.53:130][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.03-18.22.53:193][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.03-18.22.53:257][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.03-18.22.53:320][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.03-18.22.53:384][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.03-18.22.53:511][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.03-18.22.53:511][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.03-18.22.53:559][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.03-18.22.53:679][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.03-18.22.53:722][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.03-18.22.53:787][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.03-18.22.53:853][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.03-18.22.53:916][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.03-18.22.53:981][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.03-18.22.53:981][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.03-18.22.54:535][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.03-18.22.54:585][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/pslin/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.03-18.22.54:585][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/pslin/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.03-18.22.54:585][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file D:/UE4 Projects/LunchPlatformer/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.03-18.22.54:585][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.03-18.22.54:585][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file D:/UE4 Projects/LunchPlatformer/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.03-18.22.54:585][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.03-18.22.54:604][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.03-18.22.54:616][  0]LogDerivedDataCache: Using Local data cache path C:/Users/pslin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.03-18.22.54:627][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.03-18.22.54:628][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.03-18.22.54:628][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.03-18.22.54:943][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.03-18.22.54:946][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.03-18.22.55:181][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.03-18.22.55:234][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.03-18.22.55:291][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.03-18.22.55:291][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.03-18.22.55:291][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.03-18.22.55:887][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: platformertemplate, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 93884461
+[2017.05.03-18.22.55:940][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2017.05.03-18.22.55:994][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.027805 seconds
+[2017.05.03-18.22.55:999][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.03-18.22.55:999][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.05.03-18.22.55:999][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.03-18.22.56:080][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.03-18.22.57:892][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.03-18.22.57:940][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.03-18.22.58:471][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.03-18.22.58:934][  0]SourceControl: Info Source control is disabled
+[2017.05.03-18.22.58:935][  0]SourceControl: Info Source control is disabled
+[2017.05.03-18.22.58:992][  0]SourceControl: Info Source control is disabled
+[2017.05.03-18.22.59:049][  0]SourceControl: Info Source control is disabled
+[2017.05.03-18.23.00:640][  0]LogEngine: Initializing Engine...
+[2017.05.03-18.23.00:640][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.05.03-18.23.00:903][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.03-18.23.00:914][  0]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.23.00:927][  0]LogInit: FAudioDevice initialized.
+[2017.05.03-18.23.00:953][  0]LogDerivedDataCache: Saved boot cache 0.03s 50MB C:/Users/pslin/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.03-18.23.00:963][  0]LogInit: Texture streaming: Enabled
+[2017.05.03-18.23.01:081][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.03-18.23.01:243][  0]LogInit: Transaction tracking system initialized
+[2017.05.03-18.23.01:673][  0]BlueprintLog: New page: Editor Load
+[2017.05.03-18.23.02:798][  0]LocalizationService: Info Localization service is disabled
+[2017.05.03-18.23.03:604][  0]LogConsoleResponse:Display: 
+[2017.05.03-18.23.03:744][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.03-18.23.03:744][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.03-18.23.04:132][  0]LogFileCache: Scanning file cache for directory 'D:/UE4 Projects/LunchPlatformer/Content/' took 0.01s
+[2017.05.03-18.23.05:015][  0]SourceControl: Info Source control is disabled
+[2017.05.03-18.23.05:015][  0]Cmd: MAP LOAD FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.03-18.23.05:029][  0]LightingResults: New page: Lighting Build
+[2017.05.03-18.23.05:077][  0]MapCheck: New page: Map Check
+[2017.05.03-18.23.05:077][  0]LightingResults: New page: Lighting Build
+[2017.05.03-18.23.05:137][  0]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.23.05:158][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.03-18.23.05:158][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.03-18.23.05:202][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 43.672ms to complete.
+[2017.05.03-18.23.05:202][  0]LogFileHelpers: Loading map 'Main' took 0.187
+[2017.05.03-18.23.05:252][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.03-18.23.05:379][  0]LogCollectionManager: Loaded 1 collections in 0.002655 seconds
+[2017.05.03-18.23.05:467][  0]LogFileCache: Scanning file cache for directory 'D:/UE4 Projects/LunchPlatformer/Saved/Collections/' took 0.01s
+[2017.05.03-18.23.05:467][  0]LogFileCache: Scanning file cache for directory 'D:/UE4 Projects/LunchPlatformer/Content/Developers/pslin/Collections/' took 0.01s
+[2017.05.03-18.23.05:467][  0]LogFileCache: Scanning file cache for directory 'D:/UE4 Projects/LunchPlatformer/Content/Collections/' took 0.01s
+[2017.05.03-18.23.05:467][  0]LogCollectionManager: Rebuilt the GUID cache for 1 collections in 0.000006 seconds
+[2017.05.03-18.23.05:467][  0]LogCollectionManager: Rebuilt the hierarchy cache for 1 collections in 0.000000 seconds
+[2017.05.03-18.23.05:477][  0]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 2245 classes and 453 folders.
+[2017.05.03-18.23.05:481][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.03-18.23.05:481][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.03-18.23.05:556][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.05.03-18.23.05:602][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.05.03-18.23.05:653][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.05.03-18.23.05:714][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.03-18.23.05:721][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.03-18.23.05:796][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2017.05.03-18.23.05:796][  0]LogLoad: (Engine Initialization) Total time: 18.38 seconds
+[2017.05.03-18.23.05:796][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.08 seconds
+[2017.05.03-18.23.05:796][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.03-18.23.05:796][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.03-18.23.05:805][  0]LogOcInput: OculusInput pre-init called
+[2017.05.03-18.23.05:827][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.03-18.23.05:828][  0]LogSlate: Took 0.000241 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.03-18.23.05:831][  0]LogSlate: Took 0.000298 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.03-18.23.05:838][  0]LogSlate: Took 0.000238 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.03-18.23.06:012][  0]LogRenderer: Reallocating scene render targets to support 852x540 NumSamples 1 (Frame:2).
+[2017.05.03-18.23.06:077][  1]LogAssetRegistry: Asset discovery search completed in 10.1591 seconds
+[2017.05.03-18.23.06:077][  1]LogCollectionManager: Rebuilt the object cache for 1 collections in 0.000007 seconds (found 0 objects)
+[2017.05.03-18.23.06:077][  1]LogCollectionManager: Fixed up redirectors for 1 collections in 0.000022 seconds (updated 0 objects)
+[2017.05.03-18.23.09:960][458]LogSlate: Took 0.000190 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.03-18.23.12:874][733]LogSlate: Took 0.000239 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.03-18.23.13:435][733]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0012 seconds. Added 112 classes and 0 folders.
+[2017.05.03-18.23.14:207][733]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.03-18.23.14:308][733]LogSlate: Took 0.000266 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.03-18.23.14:758][734]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.03-18.23.22:995][138]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.23.23:855][200]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.23.23:920][200]LogSavePackage: Save=51.86ms
+[2017.05.03-18.23.23:920][200]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP55B96D0E41F1E75036DC1DB2DA2EE6A3.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.23.23:924][200]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.23.26:147][439]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.23.26:168][439]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.23.26:168][439]PIE: New page: PIE session: Main (3 May 2017 22:23:26)
+[2017.05.03-18.23.26:168][439]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.23.26:169][439]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000906s)
+[2017.05.03-18.23.26:169][439]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.23.26:170][439]LogPlayLevel: PIE: World Init took: (0.000582s)
+[2017.05.03-18.23.26:170][439]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001700s)
+[2017.05.03-18.23.26:190][439]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.23.26:194][439]LogInit: FAudioDevice initialized.
+[2017.05.03-18.23.26:251][439]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.23.26:254][439]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.23.26
+[2017.05.03-18.23.26:255][439]LogWorld: Bringing up level for play took: 0.002990
+[2017.05.03-18.23.26:308][439]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.05.03-18.23.26:309][439]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.829
+[2017.05.03-18.23.33:593][177]LogRenderer: Reallocating scene render targets to support 1188x712 NumSamples 1 (Frame:1999).
+[2017.05.03-18.23.48:217][338]LogSlate: Took 0.000196 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.03-18.23.52:114][620]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.23.52:707][653]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.23.52:770][653]LogSavePackage: Save=54.06ms
+[2017.05.03-18.23.52:770][653]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPEC3BB46F457F02AE6F70FBA3E540D783.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.23.52:772][653]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.23.55:256][914]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.23.55:274][914]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.23.55:274][914]PIE: New page: PIE session: Main (3 May 2017 22:23:55)
+[2017.05.03-18.23.55:274][914]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.23.55:275][914]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000907s)
+[2017.05.03-18.23.55:276][914]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.23.55:276][914]LogPlayLevel: PIE: World Init took: (0.000598s)
+[2017.05.03-18.23.55:276][914]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001676s)
+[2017.05.03-18.23.55:294][914]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.23.55:298][914]LogInit: FAudioDevice initialized.
+[2017.05.03-18.23.55:328][914]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.23.55:331][914]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.23.55
+[2017.05.03-18.23.55:332][914]LogWorld: Bringing up level for play took: 0.002633
+[2017.05.03-18.23.55:333][914]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.147
+[2017.05.03-18.24.13:999][593]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.24.14:639][631]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.24.14:702][631]LogSavePackage: Save=53.51ms
+[2017.05.03-18.24.14:702][631]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPC15316D1431417FC73821AB5C08D03FA.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.24.14:703][631]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.24.16:278][796]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.24.16:291][796]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.24.16:292][796]PIE: New page: PIE session: Main (3 May 2017 22:24:16)
+[2017.05.03-18.24.16:292][796]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.24.16:293][796]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000883s)
+[2017.05.03-18.24.16:293][796]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.24.16:293][796]LogPlayLevel: PIE: World Init took: (0.000592s)
+[2017.05.03-18.24.16:293][796]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001646s)
+[2017.05.03-18.24.16:314][796]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.24.16:318][796]LogInit: FAudioDevice initialized.
+[2017.05.03-18.24.16:352][796]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.24.16:356][796]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.24.16
+[2017.05.03-18.24.16:356][796]LogWorld: Bringing up level for play took: 0.003048
+[2017.05.03-18.24.16:358][796]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.878
+[2017.05.03-18.24.40:485][ 65]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.24.41:055][109]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.24.41:115][109]LogSavePackage: Save=51.42ms
+[2017.05.03-18.24.41:115][109]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPC87E9CC1464CE568DB7EDDB7BE7FF580.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.24.41:116][109]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.24.51:084][ 29]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.24.51:813][ 93]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.24.51:855][ 93]LogSavePackage: Save=33.68ms
+[2017.05.03-18.24.51:855][ 93]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP8CFEE9B7468A50D26B19BDBCE42B803F.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.24.51:857][ 93]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.25.06:401][529]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.25.06:897][561]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.25.06:938][561]LogSavePackage: Save=32.55ms
+[2017.05.03-18.25.06:938][561]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP5189733B4D787CD032019F939853C29C.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.25.06:939][561]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.25.38:279][822]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.27.09:895][ 12]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.27.24:543][478]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.27.25:132][525]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.27.25:179][525]LogSavePackage: Save=37.18ms
+[2017.05.03-18.27.25:179][525]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPA369DD0C411508EAFA431BAE6FC5DB9F.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.27.25:180][525]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.27.28:593][887]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.27.28:611][887]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.27.28:611][887]PIE: New page: PIE session: Main (3 May 2017 22:27:28)
+[2017.05.03-18.27.28:611][887]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.27.28:612][887]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000994s)
+[2017.05.03-18.27.28:613][887]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.27.28:613][887]LogPlayLevel: PIE: World Init took: (0.000829s)
+[2017.05.03-18.27.28:613][887]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002032s)
+[2017.05.03-18.27.28:632][887]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.27.28:638][887]LogInit: FAudioDevice initialized.
+[2017.05.03-18.27.28:672][887]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.27.28:676][887]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.27.28
+[2017.05.03-18.27.28:677][887]LogWorld: Bringing up level for play took: 0.003632
+[2017.05.03-18.27.28:679][887]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.801
+[2017.05.03-18.28.14:531][626]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.28.17:093][838]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.28.17:112][838]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.28.17:112][838]PIE: New page: PIE session: Main (3 May 2017 22:28:17)
+[2017.05.03-18.28.17:112][838]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.28.17:113][838]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000924s)
+[2017.05.03-18.28.17:113][838]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.28.17:114][838]LogPlayLevel: PIE: World Init took: (0.000757s)
+[2017.05.03-18.28.17:114][838]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001884s)
+[2017.05.03-18.28.17:191][838]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.28.17:213][838]LogInit: FAudioDevice initialized.
+[2017.05.03-18.28.17:248][838]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.28.17:251][838]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.28.17
+[2017.05.03-18.28.17:252][838]LogWorld: Bringing up level for play took: 0.003403
+[2017.05.03-18.28.17:255][838]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.225
+[2017.05.03-18.28.24:147][651]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.05.03-18.28.24:192][651]LogSavePackage: Save=15.80ms
+[2017.05.03-18.28.24:192][651]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main4CE0551F447A6FB0CF87E39942F9D97D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap'
+[2017.05.03-18.28.24:192][651]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap
+[2017.05.03-18.28.24:223][651]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main_BuiltData" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset" SILENT=true
+[2017.05.03-18.28.24:238][651]LogSavePackage: Save=3.62ms
+[2017.05.03-18.28.24:238][651]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main_BuiltDataCAF6F20141A8D2084BA591A1767852EC.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset'
+[2017.05.03-18.28.24:238][651]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset
+[2017.05.03-18.28.38:377][974]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.28.38:761][995]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.28.38:800][995]LogSavePackage: Save=25.01ms
+[2017.05.03-18.28.38:800][995]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP2F9D2842486C83A4BCAFCB9089B1DEED.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.28.38:802][995]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.30.18:304][703]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.30.31:080][882]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.30.31:117][882]LogSavePackage: Save=27.08ms
+[2017.05.03-18.30.31:117][882]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE99229CF46A5213F80FF0195CFC7DA7C.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.30.31:118][882]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.30.34:435][198]LogEditorTransaction: Undo Move Node
+[2017.05.03-18.30.44:114][ 10]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.30.44:498][ 27]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.30.44:536][ 27]LogSavePackage: Save=27.91ms
+[2017.05.03-18.30.44:536][ 27]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP09E7E4194A2DF2CD3726D28FC38A5528.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.30.44:537][ 27]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.30.47:118][258]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.30.47:182][258]LogSavePackage: Save=47.74ms
+[2017.05.03-18.30.47:182][258]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP97DF92C242A1716D4C06E4AE66CE7627.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.30.47:184][258]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.32.03:283][141]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.32.03:651][162]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.32.03:694][162]LogSavePackage: Save=28.96ms
+[2017.05.03-18.32.03:694][162]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPDA6808B04E178F69DB67F7AA8D2992F4.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.32.03:695][162]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.32.05:920][389]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.32.05:934][389]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.32.05:934][389]PIE: New page: PIE session: Main (3 May 2017 22:32:05)
+[2017.05.03-18.32.05:934][389]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.32.05:935][389]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000957s)
+[2017.05.03-18.32.05:936][389]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.32.05:936][389]LogPlayLevel: PIE: World Init took: (0.000676s)
+[2017.05.03-18.32.05:936][389]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001812s)
+[2017.05.03-18.32.05:955][389]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.32.05:960][389]LogInit: FAudioDevice initialized.
+[2017.05.03-18.32.05:995][389]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.32.05:998][389]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.32.05
+[2017.05.03-18.32.05:999][389]LogWorld: Bringing up level for play took: 0.003043
+[2017.05.03-18.32.06:001][389]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.521
+[2017.05.03-18.32.41:360][494]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.32.41:847][515]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.32.41:885][515]LogSavePackage: Save=28.92ms
+[2017.05.03-18.32.41:885][515]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP334CCE5942D0FB5CF5F87BB23EEE0BB9.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.32.41:886][515]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.32.43:826][685]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.32.43:840][685]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.32.43:840][685]PIE: New page: PIE session: Main (3 May 2017 22:32:43)
+[2017.05.03-18.32.43:841][685]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.32.43:841][685]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000907s)
+[2017.05.03-18.32.43:842][685]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.32.43:842][685]LogPlayLevel: PIE: World Init took: (0.000603s)
+[2017.05.03-18.32.43:842][685]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001688s)
+[2017.05.03-18.32.43:862][685]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.32.43:867][685]LogInit: FAudioDevice initialized.
+[2017.05.03-18.32.43:896][685]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.32.43:899][685]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.32.43
+[2017.05.03-18.32.43:900][685]LogWorld: Bringing up level for play took: 0.002634
+[2017.05.03-18.32.43:902][685]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.421
+[2017.05.03-18.33.24:839][344]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.34.22:635][699]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.34.22:681][699]LogSavePackage: Save=29.86ms
+[2017.05.03-18.34.22:681][699]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPB618B85145E81A3444F18EA471C91066.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.34.22:682][699]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.34.28:205][196]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.34.28:221][196]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.34.28:222][196]PIE: New page: PIE session: Main (3 May 2017 22:34:28)
+[2017.05.03-18.34.28:222][196]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.34.28:223][196]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001098s)
+[2017.05.03-18.34.28:223][196]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.34.28:224][196]LogPlayLevel: PIE: World Init took: (0.000759s)
+[2017.05.03-18.34.28:224][196]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002134s)
+[2017.05.03-18.34.28:243][196]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.34.28:248][196]LogInit: FAudioDevice initialized.
+[2017.05.03-18.34.28:283][196]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.34.28:287][196]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.34.28
+[2017.05.03-18.34.28:288][196]LogWorld: Bringing up level for play took: 0.003617
+[2017.05.03-18.34.28:290][196]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.81
+[2017.05.03-18.34.45:456][688]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.34.45:497][688]LogSavePackage: Save=30.93ms
+[2017.05.03-18.34.45:497][688]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPDFDC2CCC454F66BA05881E83E377EA66.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.34.45:500][688]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.35.27:678][380]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.35.28:055][401]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.35.28:097][401]LogSavePackage: Save=31.64ms
+[2017.05.03-18.35.28:097][401]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP393EE5754F76632E15D223A6D5354521.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.35.28:098][401]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.35.42:401][659]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.35.42:442][659]LogSavePackage: Save=30.80ms
+[2017.05.03-18.35.42:442][659]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP080B06964214528ADD9488B74CBA58ED.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.35.42:444][659]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.36.17:030][717]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.36.17:294][725]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.36.17:335][725]LogSavePackage: Save=30.83ms
+[2017.05.03-18.36.17:335][725]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPC2376B4F48A84106AC4A31BC9D6EA997.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.36.17:336][725]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.36.29:898][844]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.36.30:340][870]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.36.30:383][870]LogSavePackage: Save=31.66ms
+[2017.05.03-18.36.30:383][870]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP8604D7984363C66F721ADBB3974423B9.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.36.30:385][870]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.36.32:937][ 99]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.36.32:951][ 99]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.36.32:951][ 99]PIE: New page: PIE session: Main (3 May 2017 22:36:32)
+[2017.05.03-18.36.32:951][ 99]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.36.32:952][ 99]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000890s)
+[2017.05.03-18.36.32:952][ 99]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.36.32:953][ 99]LogPlayLevel: PIE: World Init took: (0.000613s)
+[2017.05.03-18.36.32:953][ 99]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001673s)
+[2017.05.03-18.36.32:974][ 99]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.36.32:980][ 99]LogInit: FAudioDevice initialized.
+[2017.05.03-18.36.33:016][ 99]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.36.33:019][ 99]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.36.33
+[2017.05.03-18.36.33:020][ 99]LogWorld: Bringing up level for play took: 0.002961
+[2017.05.03-18.36.33:022][ 99]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.458
+[2017.05.03-18.36.50:178][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.36.50:220][568]LogSavePackage: Save=32.25ms
+[2017.05.03-18.36.50:220][568]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPEA2982D04646C883BBA70ABF497D49F0.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.36.50:222][568]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.36.53:502][848]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.36.53:545][848]LogSavePackage: Save=32.22ms
+[2017.05.03-18.36.53:545][848]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPC09936924A9F659576E5BCB3EE262523.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.36.53:546][848]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.38.02:145][ 75]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.38.25:956][184]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.38.42:438][652]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.38.42:857][668]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.38.42:900][668]LogSavePackage: Save=33.91ms
+[2017.05.03-18.38.42:900][668]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP3C3C828D44C04AFC9883209E22ABE1EC.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.38.42:902][668]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.38.47:585][ 63]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.38.47:626][ 63]LogSavePackage: Save=31.90ms
+[2017.05.03-18.38.47:626][ 63]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPBA98C3044A7BA584E6EC63BBAD544DF9.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.38.47:628][ 63]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.39.24:001][293]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.39.26:446][501]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.39.26:952][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.39.27:000][534]LogSavePackage: Save=33.74ms
+[2017.05.03-18.39.27:000][534]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP5A7703B449BA7CB16E5658B63D0C8A14.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.39.27:001][534]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.39.28:993][720]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.39.29:010][720]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.39.29:010][720]PIE: New page: PIE session: Main (3 May 2017 22:39:29)
+[2017.05.03-18.39.29:010][720]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.39.29:011][720]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000996s)
+[2017.05.03-18.39.29:011][720]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.39.29:012][720]LogPlayLevel: PIE: World Init took: (0.000759s)
+[2017.05.03-18.39.29:012][720]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001945s)
+[2017.05.03-18.39.29:031][720]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.39.29:036][720]LogInit: FAudioDevice initialized.
+[2017.05.03-18.39.29:068][720]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.39.29:071][720]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.39.29
+[2017.05.03-18.39.29:073][720]LogWorld: Bringing up level for play took: 0.003339
+[2017.05.03-18.39.29:074][720]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.405
+[2017.05.03-18.39.46:426][200]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.39.46:443][200]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.39.46:443][200]PIE: New page: PIE session: Main (3 May 2017 22:39:46)
+[2017.05.03-18.39.46:443][200]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.39.46:444][200]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000997s)
+[2017.05.03-18.39.46:445][200]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.39.46:445][200]LogPlayLevel: PIE: World Init took: (0.000789s)
+[2017.05.03-18.39.46:445][200]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002009s)
+[2017.05.03-18.39.46:467][200]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.39.46:471][200]LogInit: FAudioDevice initialized.
+[2017.05.03-18.39.46:506][200]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.39.46:509][200]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.39.46
+[2017.05.03-18.39.46:510][200]LogWorld: Bringing up level for play took: 0.002788
+[2017.05.03-18.39.46:513][200]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 1.033
+[2017.05.03-18.40.17:285][537]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.40.17:328][537]LogSavePackage: Save=33.19ms
+[2017.05.03-18.40.17:328][537]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP87B2CDB448B7BB0AF3E9D6863EF3C441.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.40.17:329][537]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.40.32:391][798]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.40.32:959][836]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.40.33:002][836]LogSavePackage: Save=33.19ms
+[2017.05.03-18.40.33:002][836]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP7FF837B8476E90754E9BCEB11A2E8581.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.40.33:003][836]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.40.36:421][132]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.41.04:097][328]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.41.04:510][345]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.41.04:556][345]LogSavePackage: Save=35.71ms
+[2017.05.03-18.41.04:556][345]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPEDD7BA4E4B8D7DD064122FA3A6957051.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.41.04:557][345]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.41.06:427][510]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.41.06:440][510]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.41.06:440][510]PIE: New page: PIE session: Main (3 May 2017 22:41:06)
+[2017.05.03-18.41.06:441][510]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.41.06:442][510]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000918s)
+[2017.05.03-18.41.06:442][510]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.41.06:442][510]LogPlayLevel: PIE: World Init took: (0.000813s)
+[2017.05.03-18.41.06:443][510]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002019s)
+[2017.05.03-18.41.06:463][510]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.41.06:468][510]LogInit: FAudioDevice initialized.
+[2017.05.03-18.41.06:503][510]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.41.06:507][510]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.41.06
+[2017.05.03-18.41.06:508][510]LogWorld: Bringing up level for play took: 0.003256
+[2017.05.03-18.41.06:510][510]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 1.03
+[2017.05.03-18.41.37:085][ 81]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.42.32:877][354]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.42.33:260][374]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.42.33:310][374]LogSavePackage: Save=38.19ms
+[2017.05.03-18.42.33:310][374]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP260544D54EAC116B05BE2AAD90E7F391.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.42.33:311][374]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.42.42:149][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.42.42:193][ 69]LogSavePackage: Save=34.08ms
+[2017.05.03-18.42.42:193][ 69]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPF59A60EC459AB8C0B3F870A58941A334.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.42.42:194][ 69]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.42.43:971][235]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.42.43:986][235]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.42.43:986][235]PIE: New page: PIE session: Main (3 May 2017 22:42:43)
+[2017.05.03-18.42.43:986][235]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.42.43:987][235]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000910s)
+[2017.05.03-18.42.43:987][235]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.42.43:987][235]LogPlayLevel: PIE: World Init took: (0.000608s)
+[2017.05.03-18.42.43:988][235]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001714s)
+[2017.05.03-18.42.44:008][235]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.42.44:012][235]LogInit: FAudioDevice initialized.
+[2017.05.03-18.42.44:047][235]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.42.44:050][235]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.42.44
+[2017.05.03-18.42.44:051][235]LogWorld: Bringing up level for play took: 0.003327
+[2017.05.03-18.42.44:053][235]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.573
+[2017.05.03-18.43.44:512][980]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.43.44:558][980]LogSavePackage: Save=35.13ms
+[2017.05.03-18.43.44:558][980]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP70DF43A141B0F48F07194E8D3AB00EAE.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.43.44:559][980]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.44.07:572][785]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.44.07:983][807]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.44.08:028][807]LogSavePackage: Save=35.53ms
+[2017.05.03-18.44.08:028][807]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP44ACEFE948C792C9E26738B8712B27B9.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.44.08:030][807]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.44.23:748][120]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.44.52:847][862]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Main' took 0.014
+[2017.05.03-18.44.52:849][862]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprint/PlayerBP] ([1] browsable assets)...
+[2017.05.03-18.44.52:849][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprint/PlayerBP]
+[2017.05.03-18.44.52:849][862]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.05.03-18.44.52:899][862]LogSavePackage: Save=34.63ms
+[2017.05.03-18.44.52:899][862]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP_Auto19C1EED594E20EFDB822D94A1CC5EEAFA.tmp' to 'D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto1.uasset'
+[2017.05.03-18.44.52:900][862]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto1.uasset
+[2017.05.03-18.44.52:900][862]LogFileHelpers: Auto-saving content packages took 0.052
+[2017.05.03-18.47.00:146][690]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.47.00:678][727]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.47.00:725][727]LogSavePackage: Save=36.99ms
+[2017.05.03-18.47.00:725][727]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPCB99E0F34CC90C55ED203A871B07C6CF.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.47.00:727][727]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.47.03:515][  3]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.47.03:528][  3]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.47.03:528][  3]PIE: New page: PIE session: Main (3 May 2017 22:47:03)
+[2017.05.03-18.47.03:528][  3]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.47.03:529][  3]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000903s)
+[2017.05.03-18.47.03:530][  3]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.47.03:530][  3]LogPlayLevel: PIE: World Init took: (0.000703s)
+[2017.05.03-18.47.03:530][  3]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001792s)
+[2017.05.03-18.47.03:551][  3]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.47.03:556][  3]LogInit: FAudioDevice initialized.
+[2017.05.03-18.47.03:585][  3]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.47.03:588][  3]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.47.03
+[2017.05.03-18.47.03:589][  3]LogWorld: Bringing up level for play took: 0.003476
+[2017.05.03-18.47.03:591][  3]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.112
+[2017.05.03-18.47.07:625][476]Cmd: SELECT NONE
+[2017.05.03-18.47.16:697][167]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.47.21:637][632]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.47.21:687][632]LogSavePackage: Save=39.19ms
+[2017.05.03-18.47.21:687][632]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPB26C6D4242A782C4DD529FB4EE83F84B.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.47.21:688][632]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.47.22:479][726]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.47.22:492][726]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.47.22:493][726]PIE: New page: PIE session: Main (3 May 2017 22:47:22)
+[2017.05.03-18.47.22:493][726]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.47.22:494][726]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001011s)
+[2017.05.03-18.47.22:494][726]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.47.22:495][726]LogPlayLevel: PIE: World Init took: (0.000758s)
+[2017.05.03-18.47.22:495][726]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001979s)
+[2017.05.03-18.47.22:514][726]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.47.22:519][726]LogInit: FAudioDevice initialized.
+[2017.05.03-18.47.22:550][726]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.47.22:553][726]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.47.22
+[2017.05.03-18.47.22:553][726]LogWorld: Bringing up level for play took: 0.002842
+[2017.05.03-18.47.22:556][726]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.924
+[2017.05.03-18.47.49:918][602]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.47.59:297][427]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.47.59:343][427]LogSavePackage: Save=36.01ms
+[2017.05.03-18.47.59:343][427]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE10EBBE643BC1917CC50268F537089F2.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.47.59:344][427]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.47.59:896][478]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.48.00:388][510]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.48.00:434][510]LogSavePackage: Save=36.19ms
+[2017.05.03-18.48.00:434][510]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP479066AE4C927CCAE7EFA4944AD283E7.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.48.00:435][510]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.48.02:209][686]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.48.02:224][686]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.48.02:224][686]PIE: New page: PIE session: Main (3 May 2017 22:48:02)
+[2017.05.03-18.48.02:224][686]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.48.02:225][686]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001065s)
+[2017.05.03-18.48.02:226][686]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.48.02:226][686]LogPlayLevel: PIE: World Init took: (0.000675s)
+[2017.05.03-18.48.02:226][686]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001940s)
+[2017.05.03-18.48.02:247][686]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.48.02:251][686]LogInit: FAudioDevice initialized.
+[2017.05.03-18.48.02:281][686]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.48.02:284][686]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.48.02
+[2017.05.03-18.48.02:285][686]LogWorld: Bringing up level for play took: 0.003426
+[2017.05.03-18.48.02:287][686]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.807
+[2017.05.03-18.49.17:275][642]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.49.17:664][664]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.49.17:713][664]LogSavePackage: Save=38.59ms
+[2017.05.03-18.49.17:713][664]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP02534E7D4FDF51C03E86ECBE475D4512.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.49.17:714][664]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.49.41:032][689]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.49.41:354][704]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.49.41:402][704]LogSavePackage: Save=38.63ms
+[2017.05.03-18.49.41:402][704]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP77ACC8194D5BB2358403D5A5DFD9AC16.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.49.41:404][704]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.49.43:846][934]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.49.43:860][934]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.49.43:861][934]PIE: New page: PIE session: Main (3 May 2017 22:49:43)
+[2017.05.03-18.49.43:861][934]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.49.43:862][934]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001215s)
+[2017.05.03-18.49.43:862][934]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.49.43:863][934]LogPlayLevel: PIE: World Init took: (0.000858s)
+[2017.05.03-18.49.43:863][934]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002365s)
+[2017.05.03-18.49.43:884][934]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.49.43:888][934]LogInit: FAudioDevice initialized.
+[2017.05.03-18.49.43:921][934]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.49.43:925][934]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.49.43
+[2017.05.03-18.49.43:926][934]LogWorld: Bringing up level for play took: 0.003361
+[2017.05.03-18.49.43:928][934]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.448
+[2017.05.03-18.49.55:639][  1]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.49.56:011][ 20]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.49.56:065][ 20]LogSavePackage: Save=39.81ms
+[2017.05.03-18.49.56:065][ 20]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP4F304A184C0C7A512ED992AE766D3ECD.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.49.56:067][ 20]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.49.58:255][216]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-18.49.58:271][216]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-18.49.58:271][216]PIE: New page: PIE session: Main (3 May 2017 22:49:58)
+[2017.05.03-18.49.58:271][216]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-18.49.58:272][216]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000893s)
+[2017.05.03-18.49.58:273][216]LogAIModule: Creating AISystem for world Main
+[2017.05.03-18.49.58:273][216]LogPlayLevel: PIE: World Init took: (0.000592s)
+[2017.05.03-18.49.58:273][216]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001668s)
+[2017.05.03-18.49.58:294][216]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-18.49.58:298][216]LogInit: FAudioDevice initialized.
+[2017.05.03-18.49.58:333][216]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-18.49.58:336][216]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-20.49.58
+[2017.05.03-18.49.58:337][216]LogWorld: Bringing up level for play took: 0.002865
+[2017.05.03-18.49.58:339][216]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.859
+[2017.05.03-18.50.14:685][626]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.50.14:734][626]LogSavePackage: Save=38.92ms
+[2017.05.03-18.50.14:734][626]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPD58AA9A04E6D56371EA742A020D182F6.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.50.14:735][626]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.50.40:266][678]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.50.40:314][678]LogSavePackage: Save=39.04ms
+[2017.05.03-18.50.40:315][678]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP9E0B61D14C0E6B5EF39F82A905489B70.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.50.40:316][678]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.51.13:979][686]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.51.14:503][722]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.51.14:556][722]LogSavePackage: Save=40.76ms
+[2017.05.03-18.51.14:556][722]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP8E72B81D4CDFA3BE1A8B888DEFB1DD7A.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.51.14:557][722]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.51.28:868][ 10]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.05.03-18.51.28:912][ 10]LogSavePackage: Save=16.18ms
+[2017.05.03-18.51.28:912][ 10]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/MainFC0853F448849AE9A85D6287BF8E4527.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap'
+[2017.05.03-18.51.28:912][ 10]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap
+[2017.05.03-18.51.28:943][ 10]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main_BuiltData" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset" SILENT=true
+[2017.05.03-18.51.28:959][ 10]LogSavePackage: Save=5.27ms
+[2017.05.03-18.51.28:959][ 10]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main_BuiltDataD67EC6914A5F2FD333682FA946FC8090.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset'
+[2017.05.03-18.51.28:959][ 10]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset
+[2017.05.03-18.51.38:628][917]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.51.38:678][917]LogSavePackage: Save=38.84ms
+[2017.05.03-18.51.38:678][917]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP11F47F3C4DC18BA2B0041B8CED463643.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.51.38:679][917]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.52.09:149][420]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Data/AnimationState" FILE="D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset" SILENT=true
+[2017.05.03-18.52.09:154][420]LogSavePackage: Save=3.41ms
+[2017.05.03-18.52.09:154][420]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/AnimationStateA51263E4460631E4BE4C69B6E7013B13.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset'
+[2017.05.03-18.52.09:158][420]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset
+[2017.05.03-18.52.11:605][706]LogEnum:Warning: In asset 'None', there is an enum property of type 'AnimationState' with an invalid value of 'AnimationState::NewEnumerator0'
+[2017.05.03-18.52.17:677][416]LogEnum:Warning: In asset 'None', there is an enum property of type 'AnimationState' with an invalid value of 'AnimationState::NewEnumerator1'
+[2017.05.03-18.52.24:861][261]LogEnum:Warning: In asset 'None', there is an enum property of type 'AnimationState' with an invalid value of 'AnimationState::NewEnumerator2'
+[2017.05.03-18.52.29:998][863]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Data/AnimationState" FILE="D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset" SILENT=true
+[2017.05.03-18.52.30:014][863]LogSavePackage: Save=4.15ms
+[2017.05.03-18.52.30:014][863]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/AnimationState09B72C914110020CD80149AB924B4016.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset'
+[2017.05.03-18.52.30:015][863]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset
+[2017.05.03-18.53.34:381][221]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.53.35:004][262]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.53.35:055][262]LogSavePackage: Save=39.05ms
+[2017.05.03-18.53.35:055][262]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP7A42DD6C41CAD4A557E7CCA35EDCC037.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.53.35:056][262]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.53.58:410][413]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.54.50:315][138]LogSlate: Took 0.004372 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.05.03-18.55.17:728][617]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.57.32:673][ 47]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.58.21:352][427]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.58.21:757][450]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.58.21:817][450]LogSavePackage: Save=43.05ms
+[2017.05.03-18.58.21:817][450]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPB7AA895C44616FDE727C6BBEBE5FEC5F.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.58.21:818][450]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.59.04:536][  5]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.59.04:886][ 21]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.59.04:939][ 21]LogSavePackage: Save=42.81ms
+[2017.05.03-18.59.04:939][ 21]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE32C59F549D279329DBFDD9E5F4D8A5F.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.59.04:941][ 21]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-18.59.47:450][346]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-18.59.47:831][367]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-18.59.47:885][367]LogSavePackage: Save=44.23ms
+[2017.05.03-18.59.47:885][367]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPB23EA79942AA391455E544801C106626.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-18.59.47:887][367]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.00.18:752][749]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.00.19:415][790]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.00.19:470][790]LogSavePackage: Save=45.82ms
+[2017.05.03-19.00.19:470][790]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP9709C0C9408F0328F5B33C834CE2169B.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.00.19:471][790]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.00.21:614][979]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.00.21:633][979]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.05.03-19.00.21:633][979]LogPlayLevel: [PlayLevel] Compiling PROTO_BP_AnimBlueprint_0 before play...
+[2017.05.03-19.00.21:722][979]LogPlayLevel: PlayLevel: Blueprint regeneration took 88 ms (1 blueprints)
+[2017.05.03-19.00.21:722][979]PIE: New page: PIE session: Main (3 May 2017 23:00:21)
+[2017.05.03-19.00.21:722][979]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.00.21:723][979]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000888s)
+[2017.05.03-19.00.21:724][979]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.00.21:724][979]LogPlayLevel: PIE: World Init took: (0.000597s)
+[2017.05.03-19.00.21:724][979]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001667s)
+[2017.05.03-19.00.21:747][979]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.00.21:751][979]LogInit: FAudioDevice initialized.
+[2017.05.03-19.00.21:785][979]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.00.21:788][979]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.00.21
+[2017.05.03-19.00.21:789][979]LogWorld: Bringing up level for play took: 0.002685
+[2017.05.03-19.00.21:791][979]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.311
+[2017.05.03-19.01.20:159][  6]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.01.20:521][ 21]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.01.20:578][ 21]LogSavePackage: Save=46.44ms
+[2017.05.03-19.01.20:578][ 21]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP540D367840BEF9EA81E3058E26973FC3.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.01.20:579][ 21]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.01.25:133][378]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.01.25:187][378]LogSavePackage: Save=43.88ms
+[2017.05.03-19.01.25:187][378]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP378033AC4A447CF2F4A7D9BD1A3E0664.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.01.25:188][378]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.02.11:973][873]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Main' took 0.015
+[2017.05.03-19.02.11:974][873]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprint/PlayerBP] ([1] browsable assets)...
+[2017.05.03-19.02.11:974][873]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprint/PlayerBP]
+[2017.05.03-19.02.11:974][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.05.03-19.02.12:028][873]LogSavePackage: Save=44.47ms
+[2017.05.03-19.02.12:028][873]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP_Auto2BDBDC0BC44AF931A31E65ABFD5FAC793.tmp' to 'D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto2.uasset'
+[2017.05.03-19.02.12:029][873]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto2.uasset
+[2017.05.03-19.02.12:029][873]LogFileHelpers: Auto-saving content packages took 0.055
+[2017.05.03-19.02.12:608][917]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.02.13:324][961]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.02.13:378][961]LogSavePackage: Save=44.29ms
+[2017.05.03-19.02.13:378][961]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP76B271CA41B2D7B49AD350981DE88CD3.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.02.13:379][961]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.02.30:149][344]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.02.30:662][376]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.02.30:717][376]LogSavePackage: Save=44.55ms
+[2017.05.03-19.02.30:717][376]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP9DA1DA3746AF6BEA6FDD8B966A2AE064.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.02.30:718][376]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.02.32:567][556]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.02.32:585][556]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.02.32:585][556]PIE: New page: PIE session: Main (3 May 2017 23:02:32)
+[2017.05.03-19.02.32:585][556]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.02.32:586][556]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000918s)
+[2017.05.03-19.02.32:587][556]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.02.32:587][556]LogPlayLevel: PIE: World Init took: (0.000648s)
+[2017.05.03-19.02.32:587][556]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001754s)
+[2017.05.03-19.02.32:608][556]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.02.32:613][556]LogInit: FAudioDevice initialized.
+[2017.05.03-19.02.32:642][556]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.02.32:645][556]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.02.32
+[2017.05.03-19.02.32:646][556]LogWorld: Bringing up level for play took: 0.002976
+[2017.05.03-19.02.32:648][556]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.832
+[2017.05.03-19.05.55:516][518]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.06.00:969][ 26]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.06.01:029][ 26]LogSavePackage: Save=44.21ms
+[2017.05.03-19.06.01:029][ 26]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP0599FA264C4D0D07A1140A8E98907CEB.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.06.01:031][ 26]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.06.34:080][ 94]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.06.34:456][116]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.06.34:514][116]LogSavePackage: Save=46.75ms
+[2017.05.03-19.06.34:514][116]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP986A65B74EDE87E471938BA9B3C1781B.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.06.34:515][116]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.06.53:935][714]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.07.41:847][ 52]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.08.41:043][391]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.10.03:558][109]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.10.22:020][997]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.10.22:559][ 25]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.10.22:620][ 25]LogSavePackage: Save=50.62ms
+[2017.05.03-19.10.22:620][ 25]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP094F512543CB8C164AB37C95AA3EA899.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.10.22:621][ 25]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.10.33:552][805]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.10.51:587][238]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.11.12:709][739]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.11.13:029][751]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.11.13:100][751]LogSavePackage: Save=52.99ms
+[2017.05.03-19.11.13:100][751]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE389D587471EAEC6C6FF4CB7CBEC808D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.11.13:101][751]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.11.39:487][971]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.11.40:014][  2]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.11.40:079][  2]LogSavePackage: Save=53.32ms
+[2017.05.03-19.11.40:079][  2]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP465486934461871430F44F852771E01E.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.11.40:080][  2]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.11.41:978][183]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.11.41:991][183]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.11.41:992][183]PIE: New page: PIE session: Main (3 May 2017 23:11:41)
+[2017.05.03-19.11.41:992][183]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.11.41:993][183]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001025s)
+[2017.05.03-19.11.41:993][183]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.11.41:994][183]LogPlayLevel: PIE: World Init took: (0.000889s)
+[2017.05.03-19.11.41:994][183]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002199s)
+[2017.05.03-19.11.42:014][183]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.11.42:019][183]LogInit: FAudioDevice initialized.
+[2017.05.03-19.11.42:054][183]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.11.42:058][183]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.11.42
+[2017.05.03-19.11.42:059][183]LogWorld: Bringing up level for play took: 0.003501
+[2017.05.03-19.11.42:061][183]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.581
+[2017.05.03-19.11.56:711][688]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.12.16:476][239]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.12.18:527][402]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.12.26:217][ 60]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.12.31:163][472]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.12.31:548][492]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.12.31:615][492]LogSavePackage: Save=55.37ms
+[2017.05.03-19.12.31:615][492]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP3491DCED401EF031373031AD9A219021.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.12.31:616][492]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.12.37:901][ 17]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.12.37:963][ 17]LogSavePackage: Save=51.47ms
+[2017.05.03-19.12.37:963][ 17]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPDFC95F2F438FEC20FCA0229DC03B2172.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.12.37:965][ 17]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.13.04:971][265]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.13.11:744][527]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.13.11:808][527]LogSavePackage: Save=54.08ms
+[2017.05.03-19.13.11:809][527]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP49FF46CD4BEBC23DBD338D9F958D4F48.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.13.11:810][527]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.13.12:706][604]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.13.25:189][572]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.13.25:204][572]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.13.25:205][572]PIE: New page: PIE session: Main (3 May 2017 23:13:25)
+[2017.05.03-19.13.25:205][572]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.13.25:206][572]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000946s)
+[2017.05.03-19.13.25:206][572]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.13.25:206][572]LogPlayLevel: PIE: World Init took: (0.000617s)
+[2017.05.03-19.13.25:206][572]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001748s)
+[2017.05.03-19.13.25:228][572]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.13.25:232][572]LogInit: FAudioDevice initialized.
+[2017.05.03-19.13.25:267][572]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.13.25:270][572]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.13.25
+[2017.05.03-19.13.25:271][572]LogWorld: Bringing up level for play took: 0.003265
+[2017.05.03-19.13.25:273][572]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.207
+[2017.05.03-19.13.45:005][629]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.13.45:022][629]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.13.45:022][629]PIE: New page: PIE session: Main (3 May 2017 23:13:45)
+[2017.05.03-19.13.45:022][629]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.13.45:023][629]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000940s)
+[2017.05.03-19.13.45:023][629]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.13.45:024][629]LogPlayLevel: PIE: World Init took: (0.000696s)
+[2017.05.03-19.13.45:024][629]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001857s)
+[2017.05.03-19.13.45:043][629]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.13.45:048][629]LogInit: FAudioDevice initialized.
+[2017.05.03-19.13.45:079][629]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.13.45:083][629]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.13.45
+[2017.05.03-19.13.45:083][629]LogWorld: Bringing up level for play took: 0.003278
+[2017.05.03-19.13.45:085][629]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.395
+[2017.05.03-19.14.05:303][813]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.14.05:765][833]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.14.05:827][833]LogSavePackage: Save=51.95ms
+[2017.05.03-19.14.05:827][833]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP49A817044E8144D78FC66AAD42AA6576.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.14.05:828][833]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.14.06:591][891]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.14.06:607][891]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.14.06:607][891]PIE: New page: PIE session: Main (3 May 2017 23:14:06)
+[2017.05.03-19.14.06:608][891]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.14.06:609][891]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000996s)
+[2017.05.03-19.14.06:609][891]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.14.06:609][891]LogPlayLevel: PIE: World Init took: (0.000709s)
+[2017.05.03-19.14.06:610][891]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001989s)
+[2017.05.03-19.14.06:631][891]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.14.06:635][891]LogInit: FAudioDevice initialized.
+[2017.05.03-19.14.06:667][891]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.14.06:671][891]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.14.06
+[2017.05.03-19.14.06:672][891]LogWorld: Bringing up level for play took: 0.003495
+[2017.05.03-19.14.06:674][891]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.806
+[2017.05.03-19.14.22:471][ 83]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.14.22:899][100]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.14.22:962][100]LogSavePackage: Save=53.01ms
+[2017.05.03-19.14.22:962][100]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPD06218034304C0A4BBC6AC9B42BEF093.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.14.22:963][100]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.14.24:560][226]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.14.24:577][226]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.14.24:577][226]PIE: New page: PIE session: Main (3 May 2017 23:14:24)
+[2017.05.03-19.14.24:577][226]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.14.24:578][226]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000903s)
+[2017.05.03-19.14.24:579][226]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.14.24:579][226]LogPlayLevel: PIE: World Init took: (0.000612s)
+[2017.05.03-19.14.24:579][226]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001704s)
+[2017.05.03-19.14.24:600][226]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.14.24:604][226]LogInit: FAudioDevice initialized.
+[2017.05.03-19.14.24:634][226]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.14.24:638][226]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.14.24
+[2017.05.03-19.14.24:639][226]LogWorld: Bringing up level for play took: 0.003695
+[2017.05.03-19.14.24:641][226]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.839
+[2017.05.03-19.15.03:988][100]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.15.04:051][100]LogSavePackage: Save=52.38ms
+[2017.05.03-19.15.04:051][100]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE1310B8241EB8F9B5097B2BEE1A5A50D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.15.04:052][100]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.17.51:698][509]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.17.52:203][538]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.17.52:272][538]LogSavePackage: Save=53.89ms
+[2017.05.03-19.17.52:272][538]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE9C8041A41593C809111A189C4A3C648.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.17.52:273][538]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.18.16:064][441]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.18.47:132][843]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.19.17:105][363]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.19.22:504][793]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.19.52:105][237]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.19.52:420][250]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.19.52:487][250]LogSavePackage: Save=56.66ms
+[2017.05.03-19.19.52:487][250]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP8C0C76FE4057136FC38796A169CE7A13.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.19.52:488][250]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.19.59:973][942]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.19.59:986][942]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.19.59:986][942]PIE: New page: PIE session: Main (3 May 2017 23:19:59)
+[2017.05.03-19.19.59:987][942]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.19.59:988][942]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000937s)
+[2017.05.03-19.19.59:988][942]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.19.59:988][942]LogPlayLevel: PIE: World Init took: (0.000731s)
+[2017.05.03-19.19.59:988][942]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001900s)
+[2017.05.03-19.20.00:008][942]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.20.00:012][942]LogInit: FAudioDevice initialized.
+[2017.05.03-19.20.00:042][942]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.20.00:046][942]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.20.00
+[2017.05.03-19.20.00:047][942]LogWorld: Bringing up level for play took: 0.003673
+[2017.05.03-19.20.00:049][942]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.569
+[2017.05.03-19.20.18:201][553]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.20.18:735][580]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.20.18:805][580]LogSavePackage: Save=59.38ms
+[2017.05.03-19.20.18:805][580]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP68951935418EE9918AD787B7B0A157CC.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.20.18:807][580]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.20.40:247][298]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.20.40:676][317]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.20.40:745][317]LogSavePackage: Save=57.91ms
+[2017.05.03-19.20.40:745][317]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP005E63F847251602E8A305AA737A7684.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.20.40:746][317]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.20.45:238][504]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.20.45:255][504]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.20.45:255][504]PIE: New page: PIE session: Main (3 May 2017 23:20:45)
+[2017.05.03-19.20.45:255][504]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.20.45:256][504]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000950s)
+[2017.05.03-19.20.45:256][504]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.20.45:256][504]LogPlayLevel: PIE: World Init took: (0.000636s)
+[2017.05.03-19.20.45:257][504]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001824s)
+[2017.05.03-19.20.45:279][504]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.20.45:284][504]LogInit: FAudioDevice initialized.
+[2017.05.03-19.20.45:313][504]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.20.45:316][504]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.20.45
+[2017.05.03-19.20.45:317][504]LogWorld: Bringing up level for play took: 0.002779
+[2017.05.03-19.20.45:319][504]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.161
+[2017.05.03-19.20.57:874][393]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.20.57:891][393]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.20.57:891][393]PIE: New page: PIE session: Main (3 May 2017 23:20:57)
+[2017.05.03-19.20.57:891][393]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.20.57:892][393]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001030s)
+[2017.05.03-19.20.57:893][393]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.20.57:893][393]LogPlayLevel: PIE: World Init took: (0.000688s)
+[2017.05.03-19.20.57:893][393]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001946s)
+[2017.05.03-19.20.57:915][393]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.20.57:919][393]LogInit: FAudioDevice initialized.
+[2017.05.03-19.20.57:952][393]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.20.57:956][393]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.20.57
+[2017.05.03-19.20.57:956][393]LogWorld: Bringing up level for play took: 0.002955
+[2017.05.03-19.20.57:958][393]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.478
+[2017.05.03-19.21.20:772][164]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.21.22:019][261]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.21.22:035][261]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.21.22:035][261]PIE: New page: PIE session: Main (3 May 2017 23:21:22)
+[2017.05.03-19.21.22:035][261]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.21.22:036][261]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000926s)
+[2017.05.03-19.21.22:036][261]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.21.22:037][261]LogPlayLevel: PIE: World Init took: (0.000700s)
+[2017.05.03-19.21.22:037][261]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001831s)
+[2017.05.03-19.21.22:059][261]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.21.22:063][261]LogInit: FAudioDevice initialized.
+[2017.05.03-19.21.22:098][261]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.21.22:102][261]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.21.22
+[2017.05.03-19.21.22:103][261]LogWorld: Bringing up level for play took: 0.003121
+[2017.05.03-19.21.22:105][261]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.625
+[2017.05.03-19.21.40:518][752]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.21.43:349][923]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.21.43:366][923]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.21.43:366][923]PIE: New page: PIE session: Main (3 May 2017 23:21:43)
+[2017.05.03-19.21.43:366][923]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.21.43:367][923]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000890s)
+[2017.05.03-19.21.43:367][923]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.21.43:368][923]LogPlayLevel: PIE: World Init took: (0.000598s)
+[2017.05.03-19.21.43:368][923]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001716s)
+[2017.05.03-19.21.43:389][923]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.21.43:393][923]LogInit: FAudioDevice initialized.
+[2017.05.03-19.21.43:423][923]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.21.43:426][923]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.21.43
+[2017.05.03-19.21.43:427][923]LogWorld: Bringing up level for play took: 0.002743
+[2017.05.03-19.21.43:429][923]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.051
+[2017.05.03-19.21.55:057][873]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.21.56:256][956]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.21.56:272][956]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.21.56:272][956]PIE: New page: PIE session: Main (3 May 2017 23:21:56)
+[2017.05.03-19.21.56:272][956]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.21.56:273][956]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000935s)
+[2017.05.03-19.21.56:274][956]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.21.56:274][956]LogPlayLevel: PIE: World Init took: (0.000662s)
+[2017.05.03-19.21.56:274][956]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001927s)
+[2017.05.03-19.21.56:295][956]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.21.56:300][956]LogInit: FAudioDevice initialized.
+[2017.05.03-19.21.56:334][956]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.21.56:337][956]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.21.56
+[2017.05.03-19.21.56:338][956]LogWorld: Bringing up level for play took: 0.003199
+[2017.05.03-19.21.56:340][956]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.86
+[2017.05.03-19.22.06:204][758]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.22.06:573][773]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.22.06:643][773]LogSavePackage: Save=60.42ms
+[2017.05.03-19.22.06:643][773]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPFDE58F1C49B64C14F5403FAEE8CC4566.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.22.06:644][773]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.22.07:366][831]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.22.07:382][831]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.22.07:382][831]PIE: New page: PIE session: Main (3 May 2017 23:22:07)
+[2017.05.03-19.22.07:382][831]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.22.07:383][831]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000889s)
+[2017.05.03-19.22.07:384][831]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.22.07:384][831]LogPlayLevel: PIE: World Init took: (0.000595s)
+[2017.05.03-19.22.07:384][831]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001709s)
+[2017.05.03-19.22.07:405][831]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.22.07:409][831]LogInit: FAudioDevice initialized.
+[2017.05.03-19.22.07:438][831]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.22.07:441][831]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.22.07
+[2017.05.03-19.22.07:442][831]LogWorld: Bringing up level for play took: 0.003208
+[2017.05.03-19.22.07:444][831]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.036
+[2017.05.03-19.22.42:551][366]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.22.48:589][705]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.22.52:616][979]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.22.52:695][979]LogSavePackage: Save=63.25ms
+[2017.05.03-19.22.52:695][979]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPDDAE65304E792965501DF08639F4C69C.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.22.52:697][979]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.24.36:080][384]LogTemp: Dropped Jumping on Category Animation States
+[2017.05.03-19.24.54:460][751]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.25.06:127][703]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.25.06:270][703]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  True
+[2017.05.03-19.25.11:361][229]LogEnum:Warning: In asset 'None', there is an enum property of type 'AnimationState' with an invalid value of 'AnimationState::NewEnumerator3'
+[2017.05.03-19.25.16:889][869]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Data/AnimationState" FILE="D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset" SILENT=true
+[2017.05.03-19.25.16:904][869]LogSavePackage: Save=4.21ms
+[2017.05.03-19.25.16:904][869]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/AnimationStateB69099AC4954FB0A6AE2CFBBF4082EB4.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset'
+[2017.05.03-19.25.16:905][869]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Data/AnimationState.uasset
+[2017.05.03-19.25.18:256][990]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.25.18:395][990]BlueprintEditorCompileResults: Info The execution path doesn't end with a return node.  True
+[2017.05.03-19.25.51:707][597]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.25.52:694][655]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.25.52:767][655]LogSavePackage: Save=62.09ms
+[2017.05.03-19.25.52:767][655]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP4EAC8B0E45C396C10D3B1CBF48A38101.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.25.52:769][655]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.26.00:914][257]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.26.00:986][257]LogSavePackage: Save=62.23ms
+[2017.05.03-19.26.00:986][257]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP601E866D46D20AE73F4D4EABCA11773D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.26.00:988][257]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.26.25:377][111]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.27.03:056][ 23]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.27.03:450][ 38]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.27.03:525][ 38]LogSavePackage: Save=63.32ms
+[2017.05.03-19.27.03:525][ 38]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP61C761C241AA403806F131A2F1D02CE4.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.27.03:527][ 38]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.27.12:106][700]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.27.24:691][685]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.27.25:224][713]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.27.25:296][713]LogSavePackage: Save=61.39ms
+[2017.05.03-19.27.25:296][713]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE74675D841F2361EAD4EC98130FA864D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.27.25:297][713]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.27.29:870][ 81]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.27.40:383][858]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.27.40:717][868]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.27.40:790][868]LogSavePackage: Save=63.98ms
+[2017.05.03-19.27.40:790][868]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE6A5C28B4A6A66774D45B5AB06E51E29.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.27.40:792][868]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.27.56:281][ 87]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.27.56:357][ 87]LogSavePackage: Save=61.60ms
+[2017.05.03-19.27.56:357][ 87]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP7B0A1C584C05C87AF6100285C354DF35.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.27.56:359][ 87]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.28.04:809][752]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.28.15:257][506]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.28.15:607][517]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.28.15:684][517]LogSavePackage: Save=67.49ms
+[2017.05.03-19.28.15:684][517]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP2EADC4C74A74D23C0B2166850CF6A72E.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.28.15:686][517]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.28.28:724][567]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.28.28:798][567]LogSavePackage: Save=63.95ms
+[2017.05.03-19.28.28:798][567]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP0C7E42184B8BC836F9FCE78EBBEB9AFF.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.28.28:800][567]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.28.49:966][ 85]LogEditorTransaction: Undo Move Nodes
+[2017.05.03-19.28.50:236][ 92]LogEditorTransaction: Undo Create Pin Link
+[2017.05.03-19.28.50:793][122]LogEditorTransaction: Undo Move Node
+[2017.05.03-19.28.51:357][155]LogEditorTransaction: Undo Create Pin Link
+[2017.05.03-19.29.00:186][833]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.30.09:391][953]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Main' took 0.045
+[2017.05.03-19.30.09:392][953]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprint/PlayerBP] ([1] browsable assets)...
+[2017.05.03-19.30.09:392][953]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprint/PlayerBP]
+[2017.05.03-19.30.09:392][953]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.05.03-19.30.09:495][953]LogSavePackage: Save=91.08ms
+[2017.05.03-19.30.09:495][953]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP_Auto398DDD18B41100746FFADF8A1CC3AC1C1.tmp' to 'D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto3.uasset'
+[2017.05.03-19.30.09:496][953]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto3.uasset
+[2017.05.03-19.30.09:496][953]LogFileHelpers: Auto-saving content packages took 0.105
+[2017.05.03-19.30.21:127][634]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.30.21:553][653]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.30.21:628][653]LogSavePackage: Save=65.03ms
+[2017.05.03-19.30.21:628][653]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPFC57BED1495344C98EC2D297C17191D0.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.30.21:630][653]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.30.27:248][101]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.30.36:278][799]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.30.36:599][808]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.30.36:670][808]LogSavePackage: Save=60.43ms
+[2017.05.03-19.30.36:670][808]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP422338CC42AC424D3EADF4B68C840513.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.30.36:671][808]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.30.58:022][171]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.31.17:473][545]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.31.34:176][767]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.32.36:628][674]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.32.37:422][718]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.32.37:496][718]LogSavePackage: Save=64.27ms
+[2017.05.03-19.32.37:496][718]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP3B3552B44986BFEF685C829DC03F9043.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.32.37:498][718]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.32.42:277][ 95]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.32.42:292][ 95]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.05.03-19.32.42:292][ 95]LogPlayLevel: [PlayLevel] Compiling PROTO_BP_AnimBlueprint_0 before play...
+[2017.05.03-19.32.42:391][ 95]LogPlayLevel: PlayLevel: Blueprint regeneration took 99 ms (1 blueprints)
+[2017.05.03-19.32.42:392][ 95]PIE: New page: PIE session: Main (3 May 2017 23:32:42)
+[2017.05.03-19.32.42:392][ 95]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.32.42:393][ 95]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000934s)
+[2017.05.03-19.32.42:393][ 95]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.32.42:393][ 95]LogPlayLevel: PIE: World Init took: (0.000687s)
+[2017.05.03-19.32.42:393][ 95]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001856s)
+[2017.05.03-19.32.42:416][ 95]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.32.42:422][ 95]LogInit: FAudioDevice initialized.
+[2017.05.03-19.32.42:454][ 95]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.32.42:457][ 95]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.32.42
+[2017.05.03-19.32.42:458][ 95]LogWorld: Bringing up level for play took: 0.003164
+[2017.05.03-19.32.42:461][ 95]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.981
+[2017.05.03-19.32.59:633][265]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.33.00:024][277]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.33.00:104][277]LogSavePackage: Save=65.77ms
+[2017.05.03-19.33.00:104][277]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP7E455A7C41DC43818A48BA9EA664AB28.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.33.00:106][277]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.33.21:844][779]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.33.21:921][779]LogSavePackage: Save=66.79ms
+[2017.05.03-19.33.21:921][779]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPE1F415B6479C859EFB8D2FACFAE4848A.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.33.21:922][779]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.33.28:135][224]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.33.28:626][245]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.33.28:703][245]LogSavePackage: Save=66.99ms
+[2017.05.03-19.33.28:703][245]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPFAAEB3C246EFE965002E068BD24DCC51.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.33.28:705][245]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.33.30:234][378]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.33.30:248][378]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.33.30:248][378]PIE: New page: PIE session: Main (3 May 2017 23:33:30)
+[2017.05.03-19.33.30:248][378]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.33.30:249][378]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000901s)
+[2017.05.03-19.33.30:250][378]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.33.30:250][378]LogPlayLevel: PIE: World Init took: (0.000724s)
+[2017.05.03-19.33.30:250][378]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002067s)
+[2017.05.03-19.33.30:273][378]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.33.30:277][378]LogInit: FAudioDevice initialized.
+[2017.05.03-19.33.30:306][378]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.33.30:309][378]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.33.30
+[2017.05.03-19.33.30:310][378]LogWorld: Bringing up level for play took: 0.003062
+[2017.05.03-19.33.30:312][378]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.832
+[2017.05.03-19.33.45:283][611]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.33.45:359][611]LogSavePackage: Save=65.54ms
+[2017.05.03-19.33.45:359][611]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP482A71354038A11C665277A92BCBCBC3.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.33.45:360][611]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.34.36:909][947]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.34.36:926][947]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.34.36:926][947]PIE: New page: PIE session: Main (3 May 2017 23:34:36)
+[2017.05.03-19.34.36:926][947]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.34.36:927][947]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000894s)
+[2017.05.03-19.34.36:928][947]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.34.36:928][947]LogPlayLevel: PIE: World Init took: (0.000710s)
+[2017.05.03-19.34.36:928][947]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001851s)
+[2017.05.03-19.34.36:955][947]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.34.36:960][947]LogInit: FAudioDevice initialized.
+[2017.05.03-19.34.36:993][947]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.34.36:996][947]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.34.36
+[2017.05.03-19.34.36:998][947]LogWorld: Bringing up level for play took: 0.003501
+[2017.05.03-19.34.36:999][947]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.481
+[2017.05.03-19.35.37:667][624]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.35.38:221][651]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.35.38:299][651]LogSavePackage: Save=67.52ms
+[2017.05.03-19.35.38:299][651]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPED6F2E9C406E55BEBD322DA719514229.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.35.38:300][651]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.35.40:667][875]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.35.40:682][875]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.35.40:682][875]PIE: New page: PIE session: Main (3 May 2017 23:35:40)
+[2017.05.03-19.35.40:682][875]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.35.40:683][875]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000889s)
+[2017.05.03-19.35.40:683][875]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.35.40:683][875]LogPlayLevel: PIE: World Init took: (0.000618s)
+[2017.05.03-19.35.40:683][875]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001704s)
+[2017.05.03-19.35.40:707][875]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.35.40:711][875]LogInit: FAudioDevice initialized.
+[2017.05.03-19.35.40:741][875]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.35.40:744][875]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.35.40
+[2017.05.03-19.35.40:745][875]LogWorld: Bringing up level for play took: 0.003354
+[2017.05.03-19.35.40:747][875]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.733
+[2017.05.03-19.36.30:383][ 10]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.36.31:295][ 67]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.36.31:372][ 67]LogSavePackage: Save=67.14ms
+[2017.05.03-19.36.31:372][ 67]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP859EB67C4AE277FB250E40B946AFF9C6.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.36.31:374][ 67]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.36.32:980][214]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.36.32:994][214]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.36.32:995][214]PIE: New page: PIE session: Main (3 May 2017 23:36:32)
+[2017.05.03-19.36.32:995][214]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.36.32:996][214]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000927s)
+[2017.05.03-19.36.32:996][214]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.36.32:996][214]LogPlayLevel: PIE: World Init took: (0.000638s)
+[2017.05.03-19.36.32:996][214]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001773s)
+[2017.05.03-19.36.33:018][214]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.36.33:023][214]LogInit: FAudioDevice initialized.
+[2017.05.03-19.36.33:057][214]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.36.33:061][214]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.36.33
+[2017.05.03-19.36.33:062][214]LogWorld: Bringing up level for play took: 0.003282
+[2017.05.03-19.36.33:063][214]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.417
+[2017.05.03-19.36.57:294][589]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.36.57:373][589]LogSavePackage: Save=67.24ms
+[2017.05.03-19.36.57:373][589]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP60290FCD49E13672B97393914759D62D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.36.57:374][589]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.37.10:812][708]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.37.10:893][708]LogSavePackage: Save=71.09ms
+[2017.05.03-19.37.10:893][708]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPB918EF2E4FF9D1F67813FFB10BD3D506.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.37.10:895][708]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.37.25:616][964]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.37.25:909][972]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.37.25:985][972]LogSavePackage: Save=66.15ms
+[2017.05.03-19.37.25:985][972]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP639F15F5456292188F2E0982C8931BD2.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.37.25:986][972]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.37.27:716][135]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.37.27:731][135]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.37.27:732][135]PIE: New page: PIE session: Main (3 May 2017 23:37:27)
+[2017.05.03-19.37.27:732][135]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.37.27:733][135]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000921s)
+[2017.05.03-19.37.27:733][135]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.37.27:733][135]LogPlayLevel: PIE: World Init took: (0.000670s)
+[2017.05.03-19.37.27:734][135]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001851s)
+[2017.05.03-19.37.27:757][135]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.37.27:761][135]LogInit: FAudioDevice initialized.
+[2017.05.03-19.37.27:793][135]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.37.27:796][135]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.37.27
+[2017.05.03-19.37.27:797][135]LogWorld: Bringing up level for play took: 0.003168
+[2017.05.03-19.37.27:799][135]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.319
+[2017.05.03-19.38.24:410][827]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.38.24:967][856]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.38.25:048][856]LogSavePackage: Save=66.83ms
+[2017.05.03-19.38.25:048][856]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP74AAD7AB422DB4E7EF91F58A7161F95D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.38.25:050][856]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.38.26:807][ 22]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.38.26:821][ 22]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.38.26:822][ 22]PIE: New page: PIE session: Main (3 May 2017 23:38:26)
+[2017.05.03-19.38.26:822][ 22]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.38.26:823][ 22]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000901s)
+[2017.05.03-19.38.26:823][ 22]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.38.26:823][ 22]LogPlayLevel: PIE: World Init took: (0.000651s)
+[2017.05.03-19.38.26:823][ 22]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001754s)
+[2017.05.03-19.38.26:847][ 22]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.38.26:852][ 22]LogInit: FAudioDevice initialized.
+[2017.05.03-19.38.26:881][ 22]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.38.26:884][ 22]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.38.26
+[2017.05.03-19.38.26:885][ 22]LogWorld: Bringing up level for play took: 0.003154
+[2017.05.03-19.38.26:887][ 22]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.593
+[2017.05.03-19.38.38:249][151]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.38.38:325][151]LogSavePackage: Save=66.05ms
+[2017.05.03-19.38.38:325][151]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP6FA59CDE4280DC713273958C66509070.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.38.38:326][151]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.39.39:222][892]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.39.39:597][906]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.39.39:678][906]LogSavePackage: Save=69.95ms
+[2017.05.03-19.39.39:678][906]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP876F3A9A4514A733F60602B99F90C1B5.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.39.39:680][906]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.39.52:092][871]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.39.52:498][889]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.39.52:575][889]LogSavePackage: Save=66.15ms
+[2017.05.03-19.39.52:575][889]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP22719CD44CE24DBBCD4A4D87845CB337.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.39.52:576][889]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.39.54:239][ 41]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.39.54:252][ 41]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.39.54:252][ 41]PIE: New page: PIE session: Main (3 May 2017 23:39:54)
+[2017.05.03-19.39.54:252][ 41]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.39.54:253][ 41]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000885s)
+[2017.05.03-19.39.54:254][ 41]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.39.54:254][ 41]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2017.05.03-19.39.54:254][ 41]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001667s)
+[2017.05.03-19.39.54:277][ 41]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.39.54:282][ 41]LogInit: FAudioDevice initialized.
+[2017.05.03-19.39.54:314][ 41]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.39.54:317][ 41]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.39.54
+[2017.05.03-19.39.54:318][ 41]LogWorld: Bringing up level for play took: 0.003479
+[2017.05.03-19.39.54:320][ 41]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.84
+[2017.05.03-19.40.49:602][ 73]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.40.49:679][ 73]LogSavePackage: Save=66.63ms
+[2017.05.03-19.40.49:679][ 73]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP2DC4FF3D4184370D41406CB47A0855C6.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.40.49:680][ 73]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.41.01:535][985]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.41.01:612][985]LogSavePackage: Save=67.72ms
+[2017.05.03-19.41.01:612][985]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP4D3E8DAF4E0F7B13D8FD3780B48EA4C4.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.41.01:614][985]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.41.29:348][984]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.41.29:426][984]LogSavePackage: Save=68.07ms
+[2017.05.03-19.41.29:426][984]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP61F897344BCE4D71BC6DF1A47888C594.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.41.29:427][984]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.41.52:089][618]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.41.52:168][618]LogSavePackage: Save=67.54ms
+[2017.05.03-19.41.52:168][618]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP1B4711144B58F67F38824ABE554B4A40.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.41.52:169][618]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.42.32:401][763]LogEditorTransaction: Undo Add Node
+[2017.05.03-19.42.33:593][845]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.42.33:997][862]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.42.34:077][862]LogSavePackage: Save=69.33ms
+[2017.05.03-19.42.34:077][862]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPF2886EEE4B40298CBFDC31BC85D47F9D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.42.34:078][862]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.44.07:302][747]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.44.07:384][747]LogSavePackage: Save=66.79ms
+[2017.05.03-19.44.07:384][747]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPA54E4FE24904BA3830CFCF8F0090A021.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.44.07:386][747]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.44.09:544][943]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.44.09:562][943]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.44.09:563][943]PIE: New page: PIE session: Main (3 May 2017 23:44:09)
+[2017.05.03-19.44.09:563][943]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.44.09:564][943]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001191s)
+[2017.05.03-19.44.09:565][943]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.44.09:565][943]LogPlayLevel: PIE: World Init took: (0.000785s)
+[2017.05.03-19.44.09:565][943]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.002215s)
+[2017.05.03-19.44.09:589][943]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.44.09:594][943]LogInit: FAudioDevice initialized.
+[2017.05.03-19.44.09:629][943]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.44.09:632][943]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.44.09
+[2017.05.03-19.44.09:633][943]LogWorld: Bringing up level for play took: 0.003170
+[2017.05.03-19.44.09:635][943]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.155
+[2017.05.03-19.45.55:335][775]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.45.55:414][775]LogSavePackage: Save=68.15ms
+[2017.05.03-19.45.55:414][775]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP53DBD0BE4DEE75B77B65B69311F50786.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.45.55:416][775]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.46.25:882][191]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.46.26:284][208]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.46.26:362][208]LogSavePackage: Save=67.29ms
+[2017.05.03-19.46.26:362][208]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPD244628841CF49ED14D003AF5E152FB6.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.46.26:364][208]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.46.54:155][516]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.46.54:233][516]LogSavePackage: Save=67.77ms
+[2017.05.03-19.46.54:233][516]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP742B0BA6493454C219CCCEACF4D29754.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.46.54:235][516]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.47.59:451][936]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.47.59:529][936]LogSavePackage: Save=65.46ms
+[2017.05.03-19.47.59:529][936]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPFC34CD194F1644F2917E53B647E200ED.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.47.59:531][936]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.49.29:307][852]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.50.21:319][738]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Map/Main' took 0.016
+[2017.05.03-19.50.21:321][738]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprint/PlayerBP] ([1] browsable assets)...
+[2017.05.03-19.50.21:321][738]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprint/PlayerBP]
+[2017.05.03-19.50.21:321][738]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2017.05.03-19.50.21:401][738]LogSavePackage: Save=65.44ms
+[2017.05.03-19.50.21:401][738]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP_Auto42B60E715446CB87055F488933ED85A69.tmp' to 'D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto4.uasset'
+[2017.05.03-19.50.21:401][738]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Saved/Autosaves/Game/Blueprint/PlayerBP_Auto4.uasset
+[2017.05.03-19.50.21:401][738]LogFileHelpers: Auto-saving content packages took 0.081
+[2017.05.03-19.50.50:381][349]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.50.50:747][364]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.50.50:826][364]LogSavePackage: Save=68.35ms
+[2017.05.03-19.50.50:826][364]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPD61365CD4B632CB8DF94C69E73CC9DB4.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.50.50:827][364]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.54.45:131][ 26]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.54.45:869][ 77]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.54.45:924][ 77]LogSavePackage: Save=41.44ms
+[2017.05.03-19.54.45:924][ 77]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP63575DFB4F174BFF0D49A3A3C56982F0.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.54.45:925][ 77]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.54.47:767][277]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.54.47:785][277]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.54.47:786][277]PIE: New page: PIE session: Main (3 May 2017 23:54:47)
+[2017.05.03-19.54.47:786][277]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.54.47:787][277]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000910s)
+[2017.05.03-19.54.47:787][277]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.54.47:787][277]LogPlayLevel: PIE: World Init took: (0.000659s)
+[2017.05.03-19.54.47:787][277]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001779s)
+[2017.05.03-19.54.47:810][277]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.54.47:815][277]LogInit: FAudioDevice initialized.
+[2017.05.03-19.54.47:846][277]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.54.47:850][277]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.54.47
+[2017.05.03-19.54.47:851][277]LogWorld: Bringing up level for play took: 0.003423
+[2017.05.03-19.54.47:852][277]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.373
+[2017.05.03-19.55.03:895][735]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.55.09:950][236]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2017.05.03-19.55.10:033][236]LogTemp:Display: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.PlatformerTemplate
+
+[2017.05.03-19.55.10:034][236]LogTemp:Display: CWD: C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\DotNET\IOS
+
+[2017.05.03-19.55.10:034][236]LogTemp:Display: Initial Dir: C:\Program Files\Epic Games\UE_4.15
+
+[2017.05.03-19.55.10:034][236]LogTemp:Display: Env CWD: C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\DotNET\IOS
+
+[2017.05.03-19.55.10:034][236]LogTemp:Display: BranchPath = DESKTOP-K7JL0B7/C/Program Files/Epic Games/UE_4.15/Engine/Binaries --- GameBranchPath = DESKTOP-K7JL0B7/C/Program Files/Epic Games/UE_4.15/Engine/Binaries
+
+[2017.05.03-19.55.10:116][242]LogTemp:Display: IPP ERROR: Application exception: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\pslin\AppData\Local\Apple Computer\MobileDevice\Provisioning Profiles'.
+
+[2017.05.03-19.55.10:116][242]LogTemp:Display:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+
+[2017.05.03-19.55.10:116][242]LogTemp:Display:    at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+
+[2017.05.03-19.55.10:116][242]LogTemp:Display:    at System.IO.Directory.EnumerateFiles(String path, String searchPattern)
+
+[2017.05.03-19.55.10:116][242]LogTemp:Display:    at iPhonePackager.CodeSignatureBuilder.FindProvisions(String CFBundleIdentifier)
+
+[2017.05.03-19.55.10:116][242]LogTemp:Display:    at iPhonePackager.Program.Main(String[] args)
+
+[2017.05.03-19.56.12:231][583]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.56.12:291][583]LogSavePackage: Save=43.29ms
+[2017.05.03-19.56.12:291][583]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP3C0B1E1A46B7F5C88D8CD0A78D687B41.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.56.12:293][583]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.56.57:593][841]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-19.57.33:438][379]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-19.57.33:490][379]LogSavePackage: Save=40.73ms
+[2017.05.03-19.57.33:490][379]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP3E60EF584482B8ECFC3174A19B75E397.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-19.57.33:492][379]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-19.57.58:048][777]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-19.57.58:062][777]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-19.57.58:063][777]PIE: New page: PIE session: Main (3 May 2017 23:57:58)
+[2017.05.03-19.57.58:063][777]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-19.57.58:064][777]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000931s)
+[2017.05.03-19.57.58:064][777]LogAIModule: Creating AISystem for world Main
+[2017.05.03-19.57.58:064][777]LogPlayLevel: PIE: World Init took: (0.000687s)
+[2017.05.03-19.57.58:065][777]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001848s)
+[2017.05.03-19.57.58:088][777]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-19.57.58:093][777]LogInit: FAudioDevice initialized.
+[2017.05.03-19.57.58:128][777]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-19.57.58:132][777]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-21.57.58
+[2017.05.03-19.57.58:133][777]LogWorld: Bringing up level for play took: 0.003543
+[2017.05.03-19.57.58:135][777]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main 0.655
+[2017.05.03-20.04.27:379][993]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-20.04.28:924][130]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-20.04.29:640][188]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-20.04.29:695][188]LogSavePackage: Save=40.05ms
+[2017.05.03-20.04.29:695][188]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP793A1DA0441A11BD3D7BF098E5F777F3.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-20.04.29:696][188]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-20.04.44:815][697]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-20.04.45:265][719]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-20.04.45:315][719]LogSavePackage: Save=39.18ms
+[2017.05.03-20.04.45:315][719]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBPF7AAA98245334B07AFD2DE9D56DB37F1.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-20.04.45:316][719]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-20.04.49:886][187]BlueprintLog: New page: Compile PlayerBP
+[2017.05.03-20.04.50:313][216]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/PlayerBP" FILE="D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset" SILENT=true
+[2017.05.03-20.04.50:353][216]LogSavePackage: Save=29.84ms
+[2017.05.03-20.04.50:353][216]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/PlayerBP05F40A3E4533D35BCB096388AEDF0084.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset'
+[2017.05.03-20.04.50:354][216]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Blueprint/PlayerBP.uasset
+[2017.05.03-20.05.08:174][ 66]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.05.03-20.05.08:218][ 66]LogSavePackage: Save=16.61ms
+[2017.05.03-20.05.08:218][ 66]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main82F17C2C4F2B00C985B6AC96ACC23997.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap'
+[2017.05.03-20.05.08:218][ 66]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap
+[2017.05.03-20.05.08:249][ 66]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main_BuiltData" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset" SILENT=true
+[2017.05.03-20.05.08:264][ 66]LogSavePackage: Save=3.54ms
+[2017.05.03-20.05.08:264][ 66]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main_BuiltData8EC49B47491C47A3DF4BE08961DA076F.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset'
+[2017.05.03-20.05.08:265][ 66]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset
+[2017.05.03-20.05.10:717][357]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-20.05.10:736][357]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-20.05.10:736][357]PIE: New page: PIE session: Main (4 May 2017 00:05:10)
+[2017.05.03-20.05.10:736][357]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-20.05.10:737][357]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000911s)
+[2017.05.03-20.05.10:738][357]LogAIModule: Creating AISystem for world Main
+[2017.05.03-20.05.10:738][357]LogPlayLevel: PIE: World Init took: (0.000760s)
+[2017.05.03-20.05.10:738][357]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001850s)
+[2017.05.03-20.05.10:757][357]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-20.05.10:763][357]LogInit: FAudioDevice initialized.
+[2017.05.03-20.05.10:799][357]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-20.05.10:802][357]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-22.05.10
+[2017.05.03-20.05.10:803][357]LogWorld: Bringing up level for play took: 0.003055
+[2017.05.03-20.05.10:805][357]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.675
+[2017.05.03-20.05.24:015][928]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (SpriteSheet_01_TileMap)
+[2017.05.03-20.05.27:974][365]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.05.03-20.05.28:014][365]LogSavePackage: Save=16.48ms
+[2017.05.03-20.05.28:014][365]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main28EC167349A6069CB3BD198FC21C08AF.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap'
+[2017.05.03-20.05.28:015][365]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap
+[2017.05.03-20.05.28:044][365]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main_BuiltData" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset" SILENT=true
+[2017.05.03-20.05.28:058][365]LogSavePackage: Save=3.50ms
+[2017.05.03-20.05.28:058][365]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main_BuiltDataB712B4AB4C3CFD7F94A0B8A2CA3C9E80.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset'
+[2017.05.03-20.05.28:059][365]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset
+[2017.05.03-20.07.10:971][475]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.03-20.07.10:986][475]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.03-20.07.10:986][475]PIE: New page: PIE session: Main (4 May 2017 00:07:10)
+[2017.05.03-20.07.10:987][475]LogPlayLevel: Creating play world package: /Game/Map/UEDPIE_0_Main
+[2017.05.03-20.07.10:987][475]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000896s)
+[2017.05.03-20.07.10:988][475]LogAIModule: Creating AISystem for world Main
+[2017.05.03-20.07.10:988][475]LogPlayLevel: PIE: World Init took: (0.000647s)
+[2017.05.03-20.07.10:988][475]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Map/Main.Main to /Game/Map/UEDPIE_0_Main.Main (0.001719s)
+[2017.05.03-20.07.11:009][475]LogInit: XAudio2 using 'Line Out (2- Scarlett 2i4 USB)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.03-20.07.11:013][475]LogInit: FAudioDevice initialized.
+[2017.05.03-20.07.11:047][475]LogLoad: Game class is 'GameControllerBP_C'
+[2017.05.03-20.07.11:050][475]LogWorld: Bringing World /Game/Map/UEDPIE_0_Main.Main up for play (max tick rate 0) at 2017.05.03-22.07.11
+[2017.05.03-20.07.11:051][475]LogWorld: Bringing up level for play took: 0.003443
+[2017.05.03-20.07.11:053][475]PIE: Info Play in editor start time for /Game/Map/UEDPIE_0_Main -0.427
+[2017.05.03-20.07.32:667][638]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.05.03-20.07.32:707][638]LogSavePackage: Save=16.44ms
+[2017.05.03-20.07.32:707][638]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/MainDC85FD9344FC0A941C95828B246A7C4D.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap'
+[2017.05.03-20.07.32:707][638]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main.umap
+[2017.05.03-20.07.32:737][638]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Map/Main_BuiltData" FILE="D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset" SILENT=true
+[2017.05.03-20.07.32:752][638]LogSavePackage: Save=4.49ms
+[2017.05.03-20.07.32:752][638]LogSavePackage: Moving 'D:/UE4 Projects/LunchPlatformer/Saved/Main_BuiltData65E6932C4D60508306B913A3F57571A8.tmp' to 'D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset'
+[2017.05.03-20.07.32:753][638]LogSavePackage:Display: Finished SavePackage D:/UE4 Projects/LunchPlatformer/Content/Map/Main_BuiltData.uasset
+[2017.05.03-20.08.14:833][677]Cmd: QUIT_EDITOR
+[2017.05.03-20.08.14:907][677]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.03-20.08.14:945][677]LogExit: Preparing to exit.
+[2017.05.03-20.08.16:280][677]LogExit: Editor shut down
+[2017.05.03-20.08.16:285][677]LogExit: Transaction tracking system shut down
+[2017.05.03-20.08.16:413][677]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.03-20.08.16:413][677]LogExit: Object subsystem successfully closed.
+[2017.05.03-20.08.16:438][677]LogD3D11RHI: Shutdown
+[2017.05.03-20.08.16:438][677]LogD3D11RHI: CleanupD3DDevice
+[2017.05.03-20.08.16:527][677]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (506)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (504)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module BlueprintGraph (502)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (500)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.05.03-20.08.16:544][677]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.05.03-20.08.16:545][677]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.03-20.08.16:550][677]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.05.03-20.08.16:550][677]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.05.03-20.08.16:550][677]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.05.03-20.08.16:551][677]LogDirectoryWatcher: A directory notification for 'D:/UE4 Projects/LunchPlatformer/Content/Collections/' was aborted.
+[2017.05.03-20.08.16:551][677]LogDirectoryWatcher: A directory notification for 'D:/UE4 Projects/LunchPlatformer/Content/Developers/pslin/Collections/' was aborted.
+[2017.05.03-20.08.16:551][677]LogDirectoryWatcher: A directory notification for 'D:/UE4 Projects/LunchPlatformer/Saved/Collections/' was aborted.
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.05.03-20.08.16:551][677]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.05.03-20.08.16:552][677]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.05.03-20.08.17:526][677]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.05.03-20.08.17:527][677]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.05.03-20.08.17:571][677]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.05.03-20.08.17:584][677]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.05.03-20.08.17:585][677]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.05.03-20.08.17:802][677]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.05.03-20.08.17:802][677]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.05.03-20.08.17:802][677]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.05.03-20.08.17:802][677]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.05.03-20.08.17:803][677]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.05.03-20.08.17:804][677]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.05.03-20.08.17:804][677]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.05.03-20.08.17:805][677]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.05.03-20.08.17:805][677]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.05.03-20.08.17:805][677]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.05.03-20.08.17:805][677]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.05.03-20.08.17:807][677]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.03-20.08.17:807][677]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.03-20.08.17:807][677]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.03-20.08.17:807][677]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.03-20.08.17:908][677]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.03-20.08.18:009][677]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.03-20.08.18:010][677]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.03-20.08.18:010][677]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.03-20.08.18:010][677]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.03-20.08.18:010][677]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.03-20.08.18:010][677]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.03-20.08.18:010][677]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.03-20.08.18:014][677]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.03-20.08.18:014][677]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.03-20.08.18:014][677]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.03-20.08.18:014][677]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.03-20.08.18:014][677]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.03-20.08.18:014][677]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.03-20.08.18:153][677]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.03-20.08.18:153][677]LogDirectoryWatcher: A directory notification for 'D:/UE4 Projects/LunchPlatformer/Content/' was aborted.
+[2017.05.03-20.08.18:153][677]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.03-20.08.18:154][677]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.03-20.08.18:159][677]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.03-20.08.18:253][677]LogDerivedDataCache: Shutdown
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.03-20.08.18:253][677]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.03-20.08.18:254][677]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.03-20.08.18:254][677]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.03-20.08.18:254][677]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.05.03-20.08.18:254][677]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B0BD28E99-4D67-A3CC-3BA1-718AD55810A9%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.1-3348071%2B%2B%2BUE4%2BRelease-4.15&UserID=f9af6bb24d687fcb01ad17acf141df10%7C20a5f3a593b14a1090f0ecdcc38edc99%7Ce42d2723-c809-441e-bf6d-5451889f6164&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.03-20.08.18:272][677]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.03-20.08.18:275][677]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.03-20.08.18:275][677]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.03-20.08.18:275][677]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.03-20.08.18:275][677]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.03-20.08.18:275][677]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.03-20.08.18:295][677]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.03-20.08.18:297][677]LogExit: Exiting.
+[2017.05.03-20.08.18:313][677]Log file closed, 05/03/17 22:08:18

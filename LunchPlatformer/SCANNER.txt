@@ -1,0 +1,22 @@
+1: Create a new Blueprint Class called Scannable - only needs a Sprite
+
+2: In level: Get all blueprints of Scannable class
+
+3: Put all Scannables in an array in PlayerBP (public array from level BP)
+
+
+SCAN LOGIC:
+1: Get Scannables within range:
+	For each Scannable, check distance to player
+	For each Scannable, check dot against ForwardVector (scaled on which direction you face as well)
+		Get Forward Vec
+		Do Player location - Object location (this is the vector from player to object)
+		Dot this to get orientation
+	If distance and dot is OK, put in array ScannablesInRange
+
+2: If ScannablesInRange is not 0, get the closest scannable:
+	For each ScannableInRange, check distance to player
+	If less or equal to current closest distance, assign new Closest and new Closest Distance float
+
+3: After the loop, set the color of sprite on closest scannable (stored in a variable) 
+
